@@ -1,0 +1,115 @@
+body{
+  border: 2px solid black;
+}
+
+.section-title{
+  text-align: center;
+  border: 2px solid #aaaaaa;
+  background-color: #dedede;
+  font-size: 1.5vh;
+  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
+}
+#title{
+  margin: 0;
+}
+.under-title {
+  font-size: 2vh;
+  padding: 0;
+  margin: 0;
+}
+.thin-section{
+  margin: 0;
+}
+.grid-1{
+  display: grid;
+  grid-template-columns:20% auto;
+  grid-template-rows: repeat(auto-fill);
+  background-color: #dedede;
+
+
+}
+.item1{
+  background-color: #dedede;
+  margin: 0;
+  padding-top: 1em;
+  font-size: 1.5vh;
+  text-align: right;
+}
+.item2{
+  padding-top: .4em;
+  margin: 0;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-size: 1.5vh;
+}
+.grid2{
+
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #dedede;
+}
+label{
+  font-size: 1.5vh;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.grid3{
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #dedede;
+}
+.grid4{
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(5, auto);
+  background-color: #dedede;
+  justify-items: left;
+
+}
+.grid4 label{
+  font-size: 1.1em;
+  padding-top: .2em;
+}
+textarea{
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  height: 200px;
+	width: 100%;
+}
+
+.grid5{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #dedede;
+
+}
+.last{
+  background-color: #dedede;
+}
+br{
+  background-color: #dedede;
+}
+.submit-button{
+  margin: 0;
+  text-align: center;
+  display: block;
+  left: 50%;
+}
+button{
+  margin: 0;
+  color: orange;
+  background-color: black;
+}
+.org{
+  text-align: center;
+  padding-bottom: 1em;
+}

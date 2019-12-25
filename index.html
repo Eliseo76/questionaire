@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<!--User Story #1: I can see a title with id="title" in H1 sized text.-->
+<div class="section-title">
+  <h1 id="title">HURT FEELINGS REPORT</h1>
+  <!--User Story #2: I can see a short explanation with id="description" in P sized text.-->
+  <p id="description" class="under-title">For use of this form, see FM 22-102; the proponent agency is TRADOC</p>
+</div>
+<div class="section-title">
+  <p class="thin-section">
+    <strong>
+      DATA REQUIRED BY THE PRIVACY ACT OF 1974
+    </strong>
+  </p>
+</div>
+<div class="grid-1">
+  <h4 class="item1">AUTHORITY:</h4>
+  <P class="item2">5 USC 301, Departmental Regulations; 10 USC 3013, Secretary of the Army and E.O. 9397 (SSN) </P>
+  <h4 class="item1">PRINCIPAL PURPOSE:</h4>
+  <p class="item2">To assist whiners in documenting hurt feelings, and to provide leaders with a list of soldiers who
+    require additional counseling,
+    NCO leadership, and extra duty..</p>
+  <h4 class="item1">PRINCIPAL PURPOSE:</h4>
+  <p class="item2">To assist whiners in documenting hurt feelings, and to provide leaders with a list of soldiers who
+    require additional counseling,
+    NCO leadership, and extra duty..</p>
+  <h4 class="item1">ROUTINE USES:</h4>
+  <p class="item2">For subordinate leader development IAW FM 22-102. Leaders & whiners should use this form as
+    necessary.</p>
+  <h4 class="item1">DISCLOSURE:</h4>
+  <p class="item2">Disclosure is voluntary, but repeated disclosure may result in a DA Form 779-1A, Report of Wall To
+    Wall Counseling</p>
+
+</div>
+<div class="section-title">
+  <p class="under-title">PART I – ADMINISTRATIVE DATA</p>
+</div>
+
+
+<!--User Story #3: I can see a form with id="survey-form".-->
+<form id="survey-form">
+
+  <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
+  <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
+  <!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+
+    <div class="grid2">
+      <label for="name" id="name-label">
+        A. WHINER'S NAME
+        (Last, first, MI )
+        <input class="input-style" type="text" id="name" REQUIRED placeholder="Name here">
+
+      </label>
+      <label id="number-label">
+        <!--User Story #7: Inside the form, I can enter a number in a field with id="number".-->
+        <!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+        <!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
+
+        B. RANK/GRADE
+
+        <input id="number" type="number" min="1" max="9" placeholder="1">
+      </label>
+      <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".-->
+      <label id="email-label">
+
+        C. EMAIL
+
+        <input id="email" type="email" REQUIRED placeholder="email@yours.com">
+      </label>
+      <label>
+
+        D. DATE OF REPORT
+
+        <input type="date">
+      </label>
+      <label>
+        E. ORGANIZATION<input type="text">
+      </label>
+
+
+      <label>
+        F. NAME AND TITLE OF THE PERSON FILLING OUT THIS FORM<input type="text">
+      </label>
+    </div>
+    <div class="section-title">
+      <p class="under-title ptII">PART II – INCIDENT REPORT</p>
+    </div>
+    <section class="grid3">
+      <label for="date">A. DATE FEELINGS WERE HURT</label>
+      <input type="date" id="date">
+      <label for="time">B. TIME OF HURTFULNESS</label>
+      <input type="time" id="time">
+      <label for="location">C. LOCATION OF HURTFUL INCIDENT</label>
+      <input type="text" id="location">
+      <label for="nco">D. NCO OR OFFICER SYMPATHETIC TO WHINER</label>
+      <input type="number" id="nco">
+      <label for="feelings">E. NAME OF REAL MAN/WOMAN WHO HURT YOUR SENSITIVE
+        FEELINGS</label>
+      <input type="text" id="feelings">
+      <label for="rank">F. RANK/GRADE</label>
+      <input type="text" id="rank">
+      <div></div>
+      <div class="org">
+        <p> G. ORGANIZATION (if different from 1e above)</p>
+      <div>
+        <label for="org">Military</label>
+        <input type="radio" id="mil" name="org" value="Military" checked>
+      </div>
+      <div>
+        <label for="civilian">Civilian</label>
+        <input type="radio" name="org" value="civilian">
+      </div>
+      </div>
+
+
+    </section>
+    <div class="section-title">
+      <p class="under-title">F. REASON FOR FILING THIS REPORT <em>(Mark all that apply)</em></p>
+    </div>
+    <section class="grid4">
+      <input type="checkbox" value="thin-skin">
+      <label for="thin-skin">I am thin skinned</label>
+      <input type="checkbox" value="fix" id="fix">
+      <label for="fix">The Army needs to fix my problems</label>
+      <input type="checkbox" value="beer" id="beer">
+      <label for="beer">Two beers is not enough</label>
+      <input type="checkbox" value="wimp" id="wimp">
+      <label for="wimp"> I am a wimp</label>
+      <input type="checkbox" value="feel-hurt" id="feel-hurt">
+      <label for="feel-hurt">My feelings are easily hurt</label>
+      <input type="checkbox" value="pockets" id="pockets">
+      <label for="pockets">My hands should be in my pockets</label>
+      <input type="checkbox" value="hormones" id="hormones">
+      <label for="hormones">I have woman/man‐like hormones</label>
+      <input type="checkbox" value="sign-up" id="sign-up">
+      <label for="sign-up"> didn't sign up for this</label>
+      <input type="checkbox" value="post-brief" id="post-brief">
+      <label for="post-brief">I was not offered a post brief</label>
+      <input type="checkbox" value="crybaby" id="crybaby">
+      <label for="crybaby">I am a crybaby</label>
+      <input type="checkbox" value="no-hero" id="no-hero">
+      <label for="no-hero">I was told that I am not a hero</label>
+      <input type="checkbox" value="request-pb" id="request-pb">
+      <label for="request-pb">Someone requested a post brief</label>
+      <input type="checkbox" value="mommy" id="mommy">
+      <label for="mommy">I want my mommy</label>
+      <input type="checkbox" value="cold" id="cold">
+      <label for="cold">The weather is to cold</label>
+      <input type="checkbox" value="all" id="all">
+      <label for="all">All of the above and more</label>
+    </section>
+    <section class="section-title">
+      <p class="under-title">G. NARRATIVE <em>G. NARRATIVE (Tell us in your own sissy words how your feelings were hurt.)</em></p>
+    </section>
+    <textarea ></textarea>
+    <section class="section-title">
+      <p class="under-title">PART III ‐ AUTHENTICATION</p>
+    </section>
+    <div class="grid5">
+      <label >a. PRINTED NAME OF REAL MAN/WOMAN <input type="text"></label>
+      <label >b. SIGNATURE<input type="text"></label>
+      <label >c. PRINTED NAME OF WHINER<input type="text"></label>
+      <label >d. SIGNATURE<input type="text"></label>
+
+    </div>
+    <p class="last">We, as the Army, take hurt feelings seriously.  If you don't have someone who can give you a hug and make things all better, please let us know and we
+will promptly dispatch a "hugger" to you ASAP.  In the event we are unable to find a "hugger" we will notify the fire department and request that they
+send fire personnel to your location.  If you are in need of supplemental support, upon written request, we will make every reasonable effort to provide
+you with a "blankey", a "binky" and/or a bottle if you so desire</p>
+    <br>
+  <label for="dropdown">Anything else?</label>
+  <select name="dropdown" id="dropdown">
+    <option value="cry">Do you want a tissue?</option>
+    <option value="home">Do you want to go home?</option>
+  </select>
+    <div class="submit-button">
+
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+  <br>
+  <br>
+  <!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+
+
+  <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
+
+  <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
+
+  <!--User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
+
+  <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
+
+  <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
+
+
+
+
+
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
